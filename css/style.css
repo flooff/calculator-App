@@ -1,0 +1,132 @@
+:root,
+
+ /* theme one  */
+:root.theme1{
+    /* main  */
+    /*Very dark desaturated blue (main background ) */
+     --bg-color:hsl(222, 26%, 31%); 
+
+     /* Very dark desaturated blue (toggle background, keypad background)  */
+     --keypad-bg:hsl(223, 31%, 20%);
+
+     /* Very dark desaturated blue (screen background)  */
+     --screen-bg:hsl(224, 36%, 15%);
+
+
+     /* Keys  */
+     /* Desaturated dark blue (key background) */
+     --key-bg:hsl(225, 21%, 49%);
+
+     /* Desaturated dark blue (Key shadow) */
+     --key-shadow:hsl(224, 28%, 35%);
+
+     /* red (key background, toggle) */
+     --key-dark:hsl(6, 63%, 50%);
+     /* Dark red (key shadow)  */
+     --shadow-dark:hsl(6, 70%, 34%);
+
+     /* Light grayish orange (key background)  */
+    --key-light:hsl(30, 25%, 89%);
+    --shadow-light: hsl(28, 16%, 65%);
+
+
+    /* text  */
+    --text-color:hsl(221, 14%, 31%);
+    --white:hsl(0, 0, 100%);
+}
+
+:root.theme2{
+    /* main */
+
+    /* Light gray (main background)  */
+    --bg-color: hsl(0, 0%, 90%);
+
+    /* Grayish red (toggle background, keypad background)  */
+    --keypad-bg:hsl(0, 5%, 81%);
+
+    /* Very light gray (screen background)  */
+    --scren-bg:hsl(0, 0%, 93%);
+
+
+    /* keys  */
+    /* Dark moderate cyan (key background)  */
+    --key-bg:hsl(185, 42%, 37%);
+
+    /* Very dark cyan (key shadow)  */
+    --key-shadow:hsl(185, 58%, 25%);
+
+    /* Orange (key background, toggle)  */
+    --key-dark:hsl(25, 98%, 40%);
+    /* Dark orange (key shadow)  */
+    --shadow-dark:hsl(25, 99%, 27%);
+
+    /* Light grayish yellow (key background)  */
+    --key-light:hsl(45, 7%, 89%);
+    /* Dark grayish orange (key shadow)  */
+    --shadow-light:hsl(35, 11%, 61%);
+
+
+    /* text  */
+    --text-color:hsl(60, 10%, 19%);
+    --white:hsl(0,0,100%);
+}
+:root.theme3{
+    /* main background  */
+    --bg-color:hsl(268, 75%, 9%);
+    
+    /* Very dark violet (toggle background, keypad background, screen background):  */
+    --keypad-bg:hsl(268, 71%, 12%);
+
+
+    /* keys */
+    /* Pure cyan (key background, toggle) */
+    --key-bg:hsl(176, 100%, 44%);
+    /* Vivid magenta (key shadow) */
+    --key-shadow:hsl(285, 91%, 52%);
+
+    /* Pure cyan (key background, toggle) */
+    --key-dark: hsl(176, 100%, 44%);
+    /* Soft cyan (key shadow) */
+    --shadow-dark:hsl(177, 92%, 70%);
+
+    /* Very dark violet (key background) */
+    --key-light:hsl(268, 47%, 21%);
+    /* Dark magenta (key shadow) */
+    --shadow-light:hsl(290, 70%, 36%);
+
+    /* text */
+    /* Light yellow */
+    --text-color:hsl(52, 100%, 62%);
+    /* Very dark blue */
+    --text-colors:hsl(198, 20%, 13%);
+    /* white  */
+    --white:hsl(0,0,100%);
+}
+
+body{
+    font-size: 0;
+    margin: 0;
+    padding: 0;
+    font-family: 'Spartan', sans-serif;
+    font-weight: 700;
+    background-color: var(--bg-color);
+
+}
+
+.switch-toggle {
+    float: left;
+    background: #242729;
+  }
+  .switch-toggle input {
+   position: absolute;
+   opacity: 0;
+  }
+  .switch-toggle input + label {
+   padding: 7px;
+   float:left;
+   color: #fff;
+   cursor: pointer;
+  }
+  .switch-toggle input:checked + label {
+   background: green;
+  }
