@@ -104,15 +104,23 @@
 }
 
 body{
-    font-size: 0;
+    font-size: 18.4;
     margin: 0;
     padding: 0;
     font-family: 'Spartan', sans-serif;
     font-weight: 700;
     background-color: var(--bg-color);
-
 }
 
+ /* header  */
+
+header{
+    
+}
+
+header h1{
+    margin: 0;
+}
 .switch-toggle {
     float: left;
     background: #242729;
@@ -129,4 +137,30 @@ body{
   }
   .switch-toggle input:checked + label {
    background: green;
-  }
+}
+.toggle{
+    
+}
+label{
+
+}
+
+.switch-toggle{
+
+}
+
+h1{
+
+}
+header>p{
+
+}
+ /* main{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    min-height: 100vh;
+    grid-template-columns: repeat(4,65px);
+    grid-template-rows: 50px 75px repeat(5,50px)  ;
+} */
