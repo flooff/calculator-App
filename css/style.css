@@ -31,8 +31,7 @@
 
 
     /* text  */
-    --text-color:hsl(221, 14%, 31%);
-    --white:hsl(0, 0, 100%);
+    --text-color:white;
 }
 
 :root.theme2{
@@ -45,7 +44,7 @@
     --keypad-bg:hsl(0, 5%, 81%);
 
     /* Very light gray (screen background)  */
-    --scren-bg:hsl(0, 0%, 93%);
+    --screen-bg:hsl(0, 0%, 93%);
 
 
     /* keys  */
@@ -68,7 +67,7 @@
 
     /* text  */
     --text-color:hsl(60, 10%, 19%);
-    --white:hsl(0,0,100%);
+    /* --header-text:hsl(0,0,100%); */
 }
 :root.theme3{
     /* main background  */
@@ -98,9 +97,9 @@
     /* Light yellow */
     --text-color:hsl(52, 100%, 62%);
     /* Very dark blue */
-    --text-colors:hsl(198, 20%, 13%);
+    /* --text-colors:hsl(198, 20%, 13%);
     /* white  */
-    --white:hsl(0,0,100%);
+    /* --header-text:hsl(0,0,100%); */
 }
 
 body{
@@ -115,15 +114,16 @@ body{
  /* header  */
 
 header{
-    
+    color: var(--text-color);
 }
 
 header h1{
     margin: 0;
+    
 }
 .switch-toggle {
     float: left;
-    background: #242729;
+    background: var(--keypad-bg);
   }
   .switch-toggle input {
    position: absolute;
@@ -136,7 +136,7 @@ header h1{
    cursor: pointer;
   }
   .switch-toggle input:checked + label {
-   background: green;
+    background: var(--key-dark);
 }
 .toggle{
     
@@ -155,12 +155,40 @@ h1{
 header>p{
 
 }
- /* main{
-    display: grid;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    min-height: 100vh;
-    grid-template-columns: repeat(4,65px);
-    grid-template-rows: 50px 75px repeat(5,50px)  ;
+ /* output  */
+section{
+    background: var(--screen-bg);     
+    color: white;
+    word-wrap: break-word;
+    word-break: break-all;
+ }
+.previous-opperand{
+
+ }
+main{
+    height: 530px;
+    background-color: var(--keypad-bg);
+}
+
+button{
+    
+    border-radius: 5px;
+    background-color: var(--key-light);
+    border-bottom:4px solid var(--shadow-light);
+    font-family: 'Spartan', sans-serif;
+    font-size: 2rem;
+    color: var(--text-color);
+    font-weight: 700;
+}
+#primary{
+    background-color: var(--key-bg);
+    border-bottom:4px solid var(--key-shadow) ;
+}
+/* #primary:hover{
+    border-bottom: 0px;
 } */
+#secondary{
+    background-color: var(--key-dark);
+    border-bottom:4px solid var(--shadow-dark) ;
+
+}

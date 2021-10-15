@@ -8,7 +8,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Spartan:wght@700&display=swap" rel="stylesheet">
   <link rel="stylesheet" media="only screen and (max-width:500px)" href="./css/style.mobile.css">
   <link rel="stylesheet" href="./css/style.css">
-  <script src="./js/script.js"></script>
+  <script src="./js/script.js" defer></script>
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   
   <title>Calculator app</title>
@@ -23,74 +23,41 @@
         <div class="switch-toggle switch-3 switch-candy">
 
           <input class="theme light" id="on" name="state-d" type="radio" checked="" />
-            <label for="on" onclick="setTheme('light')"></label>
+            <label for="on" onclick="setTheme('theme1')"></label>
           
             <input class="theme dark" id="na" name="state-d" type="radio" checked="checked" />
-            <label for="na" class="disabled" onclick="setTheme('dark')"></label>
+            <label for="na" class="disabled" onclick="setTheme('theme2')"></label>
           
             <input class="theme grey" id="off" name="state-d" type="radio" />
-            <label for="off" onclick="setTheme('grey')"></label>
+            <label for="off" onclick="setTheme('theme3')"></label>
         </div>
 
       </div>
     </header>
+    <section class="input">
+      <div data-previous-operand class="previous-operand"></div>
+      <div data-current-operand class="current-operand"></div>
+    </section>
+    <main class="pad">
+      <button data-number>7</button>
+      <button data-number>8</button>
+      <button data-number>9</button>
+      <button data-delete id="primary">DEL</button>
+      <button data-number>4</button>
+      <button data-number>5</button>
+      <button data-number>6</button>
+      <button data-operation>+</button>
+      <button data-number>1</button>
+      <button data-number>2</button>
+      <button data-number>3</button>
+      <button data-operation>-</button>
+      <button data-number>.</button>
+      <button data-number>0</button>
+      <button data-operation>/</button>
+      <button data-operation>x</button> 
+      <button data-all-clear id="primary" class="span-two">RESET</button>
+      <button data-equals id="secondary" class="span-two">=</button>
+    </main>
   </div>
-  
-    <!-- <h1>calc</h1>
-    <!-- <div class="switch-toggle switch-3 switch-candy">
-
-      <input class="theme light" id="on" name="state-d" type="radio" checked="" />
-        <label for="on" onclick="setTheme('light')">ON</label>
-      
-        <input class="theme dark" id="na" name="state-d" type="radio" checked="checked" />
-        <label for="na" class="disabled" onclick="setTheme('dark')">N/A</label>
-      
-        <input class="theme grey" id="off" name="state-d" type="radio" />
-        <label for="off" onclick="setTheme('grey')">OFF</label>
-    </div> -->
-    <!-- <input class="input" type="file" name="unput" id=""> -->
-<!-- <main class="calculator-grid">
-  <h1>calc</h1>
-  <div class="output">
-    <div class="previous-operand"></div>
-    <div class="curren-operand"></div>
-  </div> -->
-  <!-- <button>7</button>
-  <button>8</button>
-  <button>9</button>
-  <button class="">DEL</button>
-  <button>4</button>
-  <button>5</button>
-  <button>6</button>
-  <button>+</button>
-  <button>1</button>
-  <button>2</button>
-  <button>3</button>
-  <button>-</button>
-  <button>.</button>
-  <button>0</button>
-  <button>/</button>
-  <button>x</button> -->
-  <!-- <button class="span-two">RESET</button>
-  <button class="span-two">=</button> -->
-
-  
-    <!-- 
-      <div class="switch-toggle switch-3 switch-candy">
-
-        <input class="theme light" id="on" name="state-d" type="radio" checked="" />
-        <label for="on" onclick="setTheme('theme1')">ON</label>
-      
-        <input class="theme dark" id="na" name="state-d" type="radio" checked="checked" />
-        <label for="na" class="disabled" onclick="setTheme('theme2')">N/A</label>
-      
-        <input class="theme grey" id="off" name="state-d" type="radio" />
-        <label for="off" onclick="setTheme('theme3')">OFF</label>    
-      </div>
-       -->
-
-
-  
-  
 </body>
 </html>
